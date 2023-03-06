@@ -3,6 +3,7 @@ import HomeView from '../views/Home.vue'
 import HelloWorldView from '../views/HelloWorld.vue'
 import ListRenderingView from '../views/ListRendering.vue'
 import EventHandlingView from '../views/EventHandling.vue'
+import FormInputBindingsView from '../views/FormInputBindings.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.ROUTES),
@@ -31,6 +32,11 @@ const router = createRouter({
             path: '/event-handling',
             name: 'event handling',
             component: EventHandlingView
+        },
+        {
+            path: '/form-input-bindings',
+            name: 'form input bindings',
+            component: FormInputBindingsView
         }
     ]
 });

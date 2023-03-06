@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/Home.vue'
 import HelloWorldView from '../views/HelloWorld.vue'
 import ListRenderingView from '../views/ListRendering.vue'
+import EventHandlingView from '../views/EventHandling.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.ROUTES),
@@ -25,6 +26,11 @@ const router = createRouter({
             path: '/list-rendering',
             name: 'list rendering',
             component: ListRenderingView
+        },
+        {
+            path: '/event-handling',
+            name: 'event handling',
+            component: EventHandlingView
         }
     ]
 });
